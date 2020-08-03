@@ -29,6 +29,11 @@ a:hover {
     list-style: none;
 }
 
+h1 {
+    font-size: 30px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
 .content {
     width: 90%;
     max-width: 1100px;
@@ -41,7 +46,8 @@ a:hover {
     justify-content: space-between;
     height: 60px;
     padding: 20px 0;
-    font-size: 13px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .nav-links ul {
@@ -246,15 +252,56 @@ a:hover {
 /* Footer styles start */
 .footer {
     padding: 30px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
-.footer {
-    
-}
 
 .footer h2, .footer div {
     font-size: 15px;
 }
 /* Footer styles end */
+
+@media screen and (max-width: 700px) {
+    .my-info {
+        grid-template-columns: 1fr;
+    }
+
+    .my-info img {
+        width: 100%;
+    }
+    .work-img.work-1 {
+        grid-column: 1/ span 10;
+    }
+
+    .tokyo-photos {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+
+    .follow img {
+        width: 50px;
+        height: 50px;
+    }
+
+
+
+@media screen and (max-width: 500px) {
+
+
+    .film {
+        grid-template-columns: 1fr;
+    }
+
+    
+
+}
