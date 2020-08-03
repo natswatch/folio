@@ -281,6 +281,10 @@ h1 {
         grid-template-columns: 1fr;
     }
 
+    .film {
+        grid-template-columns: 1fr;
+    }
+
     .contact-info {
         display: flex;
         flex-direction: column;
@@ -299,10 +303,11 @@ h1 {
 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 300px) {
 
     .film {
         grid-template-columns: 1fr;
     }
+
 
 }
