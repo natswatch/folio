@@ -8,118 +8,196 @@
 
 /* Body style */
 body {
-    background-color: #d9dcd6;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: orangered;
+    color: #262626;
+    font-size: 15px;
+    line-height: 1.5;
 }
 
- /* Header and navigation styles start */
-header {
-    padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: orangered;
-    color: #ffffff;
-}
-
-header h1 {
-    display: inline-block;
-    font-size: 48px;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
 /* <a> Element style */
 a {
     color: black;
     text-decoration: none;
 }
 
-header h1 .c {
-    color: white;
+ ul {
+    list-style: none;
 }
 
-header nav {
-    padding-top: 20px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+.content {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
 }
 
-header nav ul {
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding: 20px 0;
+    font-size: 13px;
+}
+
+.nav-links ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     list-style: none;
 }
 
-header nav ul li a {
-    padding: 10px 15px;
-    font-size: 2.55vw;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+.nav-links ul li {
+    padding: 0 10px;
 }
 
-header nav ul li a:hover {
-    
-    border-radius: 5px;
-    text-decoration: underline;
+.nav-links ul li a {
+    padding-bottom: 2px;
 }
 
-
-/* <p> Element style */
-p {
-    font-size: 16px;
+.nav-links ul li a:hover {
+    border-bottom: 2px solid #262626;
+    opacity: 0.9;
 }
 
-
-
-body {
-    background-color: orangered;
+.nav-links ul.main-menu {
+    flex: 1;
+    margin-left: 20px;
 }
 
-
-
-/* Utility class styles */
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
-/* End of utility class styles */
-
-/* Content style */
-.content {
+.intro {
     width: 100%;
+    height: 400px;
+    background: url('../images/bodegabay.JPG')
+    no-repeat center center/cover;
     display: flex;
-    text-align: center;
-    height: 250px;
-}
-
-.content my-photo {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;   
-    background-image: url("../images/smaller-pom.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 10%;
+    flex-direction: column;
     align-items: center;
-    padding-bottom: 10px;
+    text-align: center;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
-.content h2 {
-    font-size: 48px;
+.intro h2 {
+    font-size: 18px;
+}
+
+.intro h2, .intro p {
+    color: orangered;
+    margin-bottom: 5px;
+}
+
+.my-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    justify-content: space-around;
+}
+
+.my-info img {
+    width: 100%;
+    margin-right: 40px;
+    max-height: 300px;
+   
+}
+
+.my-bit {
+    font-weight: bold;
+}
+
+.my-bit h3 {
+    font-size: 40px;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-.content h3 {
-    color: black;
-    font-size: 35px;
-    font-family: Arial, Helvetica, sans-serif;
+.my-bit p {
+    font-size: 20px;
+    color: #262626;
+    line-height: 1em;
+}
+.work {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 30px;
+}
 
+.work h2 {
+    color: #fff;
+    font-weight: bold;
+}
+
+.work h3 {
+    font-style: italic;
+    padding: 10px;
+}
+
+.sites {
+    display: grid;
+    grid-template-columns: 1fr 9fr 1fr;
+    grid-gap: 20px;
+}
+
+.sites img {
+    width: 100%;
+    max-height: 500px;
+    justify-content: space-around;
+    border: 4px solid #262626;
+    border-radius: 2em;
+}
+
+.sites a {
+    font-size: 18px;
+    color: #fff;
+    font-variant: uppercase;
+}
+
+.sites p {
+    text-transform: none;
+}
+
+.work-img.work-1 {
+    grid-column: 2/ span 1;
+}
+
+.work-img {
+    margin-bottom: 20px;
+}
+
+
+.tokyo-photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.tokyo-photos img {
+    width: 100%;
+    border: 2px solid #262626;
+}
+
+.tokyo-photos a {
+    color: #fff;
+}
+
+.tokyo-photos p {
+    text-transform: none; 
+}
+
+.film {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.film img {
+    width: 100%;
+    border: 2px solid #262626;
+}
+
+.film a {
+    color: #fff;
 }
 
 
