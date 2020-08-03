@@ -21,6 +21,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    opacity: 0.6;
+}
+
  ul {
     list-style: none;
 }
@@ -200,17 +204,57 @@ a {
     color: #fff;
 }
 
+.contact-info {
+    text-align: center;
+    height: 100px;
+    padding: 20px 0;
+    font-size: 13px;
+    background-color: darkgrey;
+    border-radius: 2em;;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+}
 
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.contact-info h3 {
+    font-size: 18px;
+}
+
+.follow {
+    margin: 0 50px;;
+}
+
+.follow div {
+    display: inline-block;
+
+}
+
+.follow img {
+    width: 30px;
+    height: 30px;
+}
 
 /* Footer styles start */
 .footer {
     padding: 30px;
-    clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
-.footer h2 {
-    font-size: 20px;
+.footer {
+    
+}
+
+.footer h2, .footer div {
+    font-size: 15px;
 }
 /* Footer styles end */
