@@ -15,4 +15,4 @@ GitHub Repo URL: https://github.com/natswatch/folio
 
 
 
-![image](https://user-images.githubusercontent.com/24613646/89149395-3515c180-d511-11ea-917f-6e42f848eb92.png)
+![image](https://user-images.githubusercontent.com/24613646/98505525-39d3cb00-220e-11eb-8b6d-56e58ff7d788.png)
