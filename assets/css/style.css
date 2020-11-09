@@ -123,10 +123,9 @@ img {
 
 .my-bit {
     font-weight: bold;
-    position: absolute;
-    bottom: 20%;
-    left: 50%;
-    padding-right: 10rem;
+    padding-right: 5rem;
+    padding-left: 1rem;
+    
 }
 
 .my-bit h3 {
@@ -238,8 +237,8 @@ img {
     padding: 20px 0;
     font-size: 13px;
     background-color: darkgrey;
-    opacity:  .5;
-    border-radius: 2em;;
+    opacity:  .7;
+    border-radius: 2rem;
     justify-content: center;
     align-items: center;
     display: grid;
